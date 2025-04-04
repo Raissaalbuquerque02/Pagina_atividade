@@ -1,38 +1,152 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Página Atividade</title>
 
     <style>
-        .foto{
-            width: 25%;
-            border-radius: 25%;
-        }
-
+            
         body{
-            text-align: center;
-        }
-
-        h1{
-            color: rgb(78, 64, 197);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: gainsboro;
         }
     
+        .foto-perfil{
+            width: 150px;
+            height: 50%;
+            border-radius: 25%;
+        }
+    
+        header{
+            text-align: center;
+        }
+    
+        h1{
+            color: rgb(161, 17, 190);
+            font-size: 30px;
+        }
+    
+        h5 {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+    
+        .habilidade-tag {
+        display: inline-block;
+        font-size: 1rem;
+        color: white;
+        background-color: rgb(161, 17, 190);
+        border-radius: 3px;
+        padding: 5px 12px;
+        margin: 4px;
+        }
 
+        .cabecalho {
+        width: 100%;
+        max-width: 1200px; 
+        margin: 0 auto;
+        padding: 0 auto;
+        text-align: left;
+        }
+
+        #projetos{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card{
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .card img{
+            width: 100%;            
+        }
+
+        .card p{
+            font-size: 1rem;
+            margin: 1rem 0;
+            text-align: justify;
+        }
+
+        .card a {
+            display: inline-block;
+            background-color: rgb(161, 17, 190);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: auto;
+            width: fit-content;
+            align-self: center;
+        }
+
+        
+
+
+    
     </style>
 </head>
 <body>
     <header>
-        <img class="foto" src="assests/WhatsApp Image 2025-03-28 at 20.58.14.jpeg" alt="">
-        <h1>Eu sou a Raissa Albuquerque </h1>
-        <h2>Eu ensino Programação!</h2>
+        <img class="foto-perfil" src="assets/WhatsApp Image 2025-03-28 at 20.58.14.jpeg" alt="Foto de foto-perfil">
+        <h1>Eu sou a Raissa</h1>
         <p>Sou estudande do curso de Análise e Desenvolvimento de sistemas, na Universidade Tecnológica Federal do Paraná (UTF-PR) e estou no 2º período.</p>
-        <h5>MINHAS HABILIDADES:</h5>
-        <button> HTML </button>
-        <button> CSS </button>
-        <button> JavaScript</button>
+        <div>
+            <h5>Minhas habilidades</h5>
+            <div class="habilidade-tag">HTML</div>
+            <div class="habilidade-tag">CSS</div>
+            <div class="habilidade-tag">JAVASCRIPT</div>
+        </div>
     </header>
+
+    <div class="cabecalho">
+        <h2>Meus projetos</h2>
+    </div>
+
     
-   
+    <div id="projetos">
+        <figure class="card">
+            <img src="assets/duolingo.jpg" alt="">
+            <figcaption>
+            
+                <a href="https://pt.duolingo.com/log-in">Clique Aqui
+                </a>
+            </figcaption>
+        </figure>
+
+        <figure class="card">
+            <img src="assets/Github.jpg" alt="">
+            <figcaption>
+               
+                <a href="https://github.com/Raissaalbuquerque02">Clique Aqui</a>
+            </figcaption>
+        </figure>
+
+        <figure class="card">
+            <img src="assets/istagram.jpg" alt="">
+            <figcaption>
+               
+                <a href="https://www.instagram.com/raissa_albuquerque2">Clique Aqui</a>
+            </figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>
